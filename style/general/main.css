@@ -1,0 +1,90 @@
+/* header */
+/* color pallete
+https://www.schemecolor.com/pastel-color-tones.php */
+header{
+    width: 100vw;
+    display: inline-block;
+}
+header img{
+    margin: 0;
+height: 10%;
+display: block;
+}
+.icon{
+    margin: 0;
+    width: 100%;
+}
+.title{
+    margin: 0;
+    background-color: inherit;
+    width: 100%;
+    text-align: center;
+    background-color:#957DAD;
+
+}
+.blerb{
+    background-color: #D291BC;
+    text-align: center;
+    margin: 0;
+}
+nav{
+    margin: 0;
+}
+nav ul{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    text-align: center;
+    justify-content:space-between;
+    width: auto;
+    background-color: #FEC8D8;
+    display: block;
+    margin: 0;
+}
+nav li:hover{
+opacity: 0.50;
+}
+.active{
+    opacity: 0.50;
+}
+body{
+
+    margin: 0;
+    background-color: #E0BBE4;
+}
+
+main{
+    display: block;
+}
+
+/* tablet */
+/* header */
+@media screen and (max-width: 992px) {
+    body{
+    background-color: #E0BBE4;
+}
+}
+
+/* phone */
+/* header */
+
+@media screen and (max-width: 375px) {
+body{
+    background-color:#E0BBE4;
+}
+header{
+    position: fixed;
+    z-index: 2;
+}
+ nav{
+   display: none;
+   
+}
+main{
+    padding-top:22vh;
+}
+}
