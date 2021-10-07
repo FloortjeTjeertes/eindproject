@@ -44,6 +44,7 @@ nav li{
     background-color: #FEC8D8;
     display: block;
     margin: 0;
+    height: 100%
 }
 nav li:hover{
 opacity: 0.50;
