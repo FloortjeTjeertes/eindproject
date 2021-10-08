@@ -1,0 +1,52 @@
+main{
+    width: 100vw;
+    display:flex;
+    flex-direction: row;
+}
+
+.video{
+    object-fit: fill;
+    /* height: 60%; */
+    width: 100%;
+}
+
+
+.travels{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+.travels article {
+    display: flex;
+    flex-direction:row;
+}
+.travels .text{
+    width: 40%;
+}
+
+.travels  .image{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+}
+.side{
+    background-color: #D291BC;
+    height: 52%;
+    display: block;
+    position: fixed;
+    left: 76%;
+    top: 33%;
+}
+
+/* tablet */
+/* header */
+@media screen and (max-width: 1179px) {
+   
+}
+
+/* phone */
+/* header */
+
+@media screen and (max-width: 480px) {
+
+}
