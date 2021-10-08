@@ -1,13 +1,15 @@
 /* header */
 /* color pallete
 https://www.schemecolor.com/pastel-color-tones.php */
-header{
-    width: 100vw;
+.header{
+    width: 100%;
     display: inline-block;
+    background-color:#957DAD;
+
 }
-header img{
+.header img{
     margin: 0;
-height: 10%;
+width: 5%;
 display: block;
 }
 .icon{
@@ -19,7 +21,6 @@ display: block;
     background-color: inherit;
     width: 100%;
     text-align: center;
-    background-color:#957DAD;
 
 }
 .blerb{
@@ -52,32 +53,54 @@ opacity: 0.50;
 .active{
     opacity: 0.50;
 }
+/* main */
 body{
-
     margin: 0;
     background-color: #E0BBE4;
 }
-
+html{
+}
 main{
     display: block;
 }
 
+/* footer */
+.footer{
+    background-color: #957DAD;
+    height: 30vh;
+
+}
+
+.cookie{
+height: auto;
+width: 20%;
+position: fixed;
+top: 80vh;
+left:75vw;
+color: #FFF;
+opacity: 50%;
+background-color: #FA0;
+}
+
+
 /* tablet */
-/* header */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1179) {
+   /* header */
+
     body{
     background-color: #E0BBE4;
-}
+    }
 }
 
 /* phone */
-/* header */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480) {
+    /* header */
+
 body{
     background-color:#E0BBE4;
 }
-header{
+.header{
     position: fixed;
     z-index: 2;
 }
