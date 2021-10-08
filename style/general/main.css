@@ -7,6 +7,8 @@ https://www.schemecolor.com/pastel-color-tones.php */
     background-color:#957DAD;
 
 }
+
+
 .header img{
     margin: 0;
 width: 5%;
@@ -49,7 +51,9 @@ nav li{
 }
 nav li:hover{
 opacity: 0.50;
+cursor:pointer;
 }
+
 .active{
     opacity: 0.50;
 }
