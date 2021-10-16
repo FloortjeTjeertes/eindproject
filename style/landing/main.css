@@ -51,9 +51,8 @@ main{
     main{
         flex-direction:column-reverse;
     }
-    .video{
-display: none;
-    }
+
+
     .travels{
         width: 100%;
     }

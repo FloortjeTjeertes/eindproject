@@ -9,14 +9,11 @@ https://www.schemecolor.com/pastel-color-tones.php */
 }
 
 
-.header img{
-    margin: 0;
-width: 5%;
-display: block;
-}
+
 .icon{
+    display: block;
+    width: 5%;
     margin: 0;
-    width: 100%;
 }
 .title{
     margin: 0;
@@ -53,6 +50,10 @@ nav li:hover{
 opacity: 0.50;
 cursor:pointer;
 }
+.hamburger{
+    display: none;
+    width: 15vw;
+}
 
 .active{
     opacity: 0.50;
@@ -62,8 +63,7 @@ body{
     margin: 0;
     background-color: #E0BBE4;
 }
-html{
-}
+
 main{
     display: block;
 }
@@ -82,13 +82,13 @@ position: fixed;
 top: 90vh;
 left:75vw;
 color: #FFF;
-opacity: 50%;
+opacity: 0.50;
 background-color: #FA0;
-}
+} 
 
 
 /* tablet */
-@media screen and (max-width: 1179) {
+@media screen and (max-width: 1179px) {
    /* header */
 
     body{
@@ -98,21 +98,47 @@ background-color: #FA0;
 
 /* phone */
 
-@media screen and (max-width: 480) {
+@media screen and (max-width: 480px) {
     /* header */
 
-body{
-    background-color:#E0BBE4;
+.icon{
+    display: none;
+    width: 20%;
+    
+}
+.header{
+    display: flex;
+}
+.video{
+display: none;
 }
 .header{
     position: fixed;
     z-index: 2;
 }
- nav{
-   display: none;
-   
+nav ul{
+    display: flex;
+   flex-direction: column;
 }
+.hamburger{
+    display: block;
+    
+}
+/* main */
 main{
-    padding-top:22vh;
+    padding-top: 12.2vh;
+
+    }   
+.navbuttons{
+    display: block;
+    position: fixed;
+}
+.hidden{
+    display: none;
+}
+.header section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 }
