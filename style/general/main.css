@@ -126,10 +126,11 @@ nav ul{
 }
 /* main */
 main{
-    padding-top: 12.2vh;
+    padding-top: 8.2vh;
 
     }   
 .navbuttons{
+    width: 15%;
     display: block;
     position: fixed;
 }
