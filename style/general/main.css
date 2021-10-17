@@ -9,7 +9,6 @@ https://www.schemecolor.com/pastel-color-tones.php */
 }
 
 
-
 .icon{
     display: block;
     width: 5%;
@@ -64,11 +63,13 @@ body{
 }
 
 main{
+    height: fit-content;
     display: block;
 }
 
 /* footer */
 .footer{
+    margin-top: auto;
     background-color: #957DAD;
     height: 30vh;
 
@@ -87,12 +88,13 @@ background-color: #FA0;
 
 
 /* tablet */
-@media  screen and(min-width: 481px )  and (max-width: 1179px ) {
+@media  screen and (max-width: 1179px ) {
     /* header */
 
     body{
     background-color: #E0BBE4;
     }
+   
 }
 
 /* phone */

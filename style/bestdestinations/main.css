@@ -1,0 +1,104 @@
+
+main article {
+    padding: 1%;
+    background-color: #D291BC;
+}
+main :nth-child(1){
+    grid-area: Curaçao;
+
+}
+main  :nth-child(2){
+    grid-area: Griekenland;
+
+}
+main  :nth-child(3){
+    grid-area: Spanje;
+
+}
+main  :nth-child(4){
+    grid-area: Aruba;
+
+}
+main  :nth-child(5){
+    grid-area: Nederland;
+
+}
+main  :nth-child(6){
+    grid-area: beach;
+
+}
+aside{
+    grid-area: images;
+width: 100vw;
+ height: 20vh;
+}
+aside a{
+    background-size: cover;
+    background: no-repeat;
+    max-width: 33vw;
+    min-width: 30vw;
+    display: inline-block;
+    height:100%;
+    background-image:url('../../recources/img/bestdestinations/crete-jpg_header-38813.webp');
+
+}
+aside :nth-child(0){
+    background-image:url("recources/img/bestdestinations/crete-jpg_header-38813.webp");
+}
+aside :nth-child(0){
+ max-width: inherit;
+ }
+ aside :nth-child(0){
+     max-width: inherit;
+ }
+
+main{
+    column-gap: 1%;
+    display: grid;
+grid-template-columns: auto auto auto;
+/* grid-template-rows: auto; */
+grid-template-areas: 
+"Griekenland Curaçao Spanje"
+"Nederland  Curaçao Aruba"
+"Nederland beach beach"
+"images images images";
+max-height: 50%;
+}
+@media screen and (max-width: 1179px ) {
+   
+    main :nth-child(4){
+        display: none;
+        background-color:cornflowerblue;
+    }
+    main{
+        grid-template-areas: 
+            "Curaçao Griekenland"
+            "Curaçao Griekenland"
+            "Spanje  Griekenland"
+            "Spanje Nederland"
+            "Spanje Nederland"
+            "Spanje Nederland"
+            "beach beach"
+            "images images";
+    }
+  
+
+
+}
+@media screen and (max-width: 480px) {
+    main :nth-child(4){
+        display: none;
+        background-color:cornflowerblue;
+    }
+    
+    main{
+        grid-template-areas: 
+            "Nederland"
+            "Spanje"
+            "Griekenland"
+            "Curaçao"
+            "beach"
+            "images"
+            ;
+    }
+}
