@@ -87,8 +87,8 @@ background-color: #FA0;
 
 
 /* tablet */
-@media screen and (max-width: 1179px) {
-   /* header */
+@media  screen and(min-width: 481px )  and (max-width: 1179px ) {
+    /* header */
 
     body{
     background-color: #E0BBE4;
@@ -121,13 +121,12 @@ background-color: #FA0;
 display: none;
 }
 
-nav ul{
-    display: flex;
-   flex-direction: column;
-}
+
 nav{
-    color: #957DAD;
-    width: 20%;
+    background-color: #957DAD;
+    width: 15%;
+    padding: 1%;
+    height: 139%;
 }
 .hamburger{
     height: 100%;
@@ -141,11 +140,26 @@ main{
 
     }   
 .navbuttons{
-    width: 100%;
+    display: flex;
+   flex-direction: column;
+   align-items:flex-start;
     display: block;
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 2s;
+    opacity: 1;
+    visibility: visible;
 }
-.hidden{
-    display: none;
+.hidden {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+    opacity: 0;
+    visibility: hidden;
 }
 
 
