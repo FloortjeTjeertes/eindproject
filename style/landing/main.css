@@ -66,6 +66,11 @@ main{
         width: auto;
 
     }
+
+    .travels{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
 }
 
 /* phone */
@@ -102,6 +107,7 @@ main{
     }   
 
     .travels{
+        flex-direction: column-reverse;
         width: 100%;
     }
    
