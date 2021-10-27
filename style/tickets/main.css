@@ -83,4 +83,14 @@ height: 50px;
 }
 
 @media  screen and (max-width: 480px ) {
+    .about{
+        display: none;
+    }
+    main{
+   
+        grid-template-areas:
+        "table"
+       "tablecopy"
+       "images";
+    }
 }
