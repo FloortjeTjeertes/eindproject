@@ -58,12 +58,13 @@ cursor:pointer;
 }
 /* main */
 body{
+    height: fit-content;
     margin: 0;
     background-color: #E0BBE4;
 }
 
 main{
-    height: fit-content;
+    height: 100%;
     display: block;
 }
 
