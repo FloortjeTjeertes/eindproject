@@ -1,3 +1,16 @@
+main{
+    display: grid;
+    grid-template-areas: 
+    "contactinfo contactinfo"
+    "form images";
+}
+.contactinfo{
+grid-area:contactinfo;
+}
+form{
+    grid-area: form;
+}
+
 aside{
     margin-top:2% ;
 
@@ -23,4 +36,12 @@ aside :nth-child(2){
 aside :nth-child(3){
     background-image:url("../../recources/img/bestdestinations/tenerife-spain-jpg_header-35043.webp");
 
+}
+@media  screen and (max-width: 1179px ) {
+}
+
+
+
+@media  screen and (max-width: 480px ) {
+    
 }
