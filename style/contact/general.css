@@ -1,0 +1,26 @@
+aside{
+    margin-top:2% ;
+
+    grid-area: images;
+    display: flex;
+    width: 100%;
+    
+    flex-direction: column;
+}
+aside a{
+    height: 170px;
+    background-size: cover;
+    width: 100%;
+    display: inline-block;
+}
+
+aside :nth-child(1){
+    background-image:url("../../recources/img/bestdestinations/crete-jpg_header-38813.webp");
+}
+aside :nth-child(2){
+    background-image:url("../../recources/img/bestdestinations/las-palmas-de-gran-canaria-spain-jpg_header-31996.webp");
+}
+aside :nth-child(3){
+    background-image:url("../../recources/img/bestdestinations/tenerife-spain-jpg_header-35043.webp");
+
+}
