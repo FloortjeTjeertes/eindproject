@@ -10,7 +10,10 @@ grid-area:contactinfo;
 form{
     grid-area: form;
 }
-
+textarea{
+    resize: none;
+    height: 50%;
+}
 aside{
     margin-top:2% ;
 
@@ -38,10 +41,17 @@ aside :nth-child(3){
 
 }
 @media  screen and (max-width: 1179px ) {
+    
 }
 
 
 
 @media  screen and (max-width: 480px ) {
-    
+    main{
+        display: grid;
+        grid-template-areas: 
+        "contactinfo contactinfo"
+        "form form" 
+        "images images";
+    }
 }
