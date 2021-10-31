@@ -8,6 +8,8 @@ main{
 grid-area:contactinfo;
 }
 form{
+    display: flex;
+    flex-direction: column;
     grid-area: form;
 }
 textarea{

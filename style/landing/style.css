@@ -21,6 +21,8 @@ main{
     flex-direction:row;
 }
 .travels .text{
+    line-height: 1.3;
+    text-indent: 2em;
     /* width: 40%; */
 }
 

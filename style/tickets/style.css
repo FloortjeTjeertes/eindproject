@@ -44,9 +44,13 @@ aside :nth-child(3){
 
 /* table */
 table{
+    width: 100vw;
     grid-area: table;
 }
 table td{
+    border-width:3px;
+    border-color: #957DAD;
+    border-style:double;
     background-color:#D291BC;
 
 }
@@ -71,6 +75,11 @@ height: 50px;
     grid-area: tablecopy;
 }
 @media  screen and (max-width: 1179px ) {
+    aside :nth-child(1){
+        display: none;
+    }
+
+
     main{
    
         grid-template-areas:
@@ -89,8 +98,10 @@ height: 50px;
     .about{
         display: none;
     }
+  
     main{
    
+
         grid-template-areas:
         "table"
        "tablecopy"
