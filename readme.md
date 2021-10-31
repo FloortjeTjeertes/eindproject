@@ -1,0 +1,6 @@
+copy of student.txt
+
+name: florian tjeertes
+student id: 688016
+class:inf1c
+github:https://github.com/floriantjeertes/eindproject
