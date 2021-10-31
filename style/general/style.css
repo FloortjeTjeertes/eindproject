@@ -63,6 +63,7 @@ body{
     height: fit-content;
     margin: 0;
     background-color: #E0BBE4;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main{
@@ -126,12 +127,11 @@ background-color: #FA0;
 display: none;
 }
 
-
+/* this is a comment */
 nav{
     background-color: #957DAD;
     width: 15%;
     padding: 1%;
-    height: 139;
 
 }
 .hamburger{
