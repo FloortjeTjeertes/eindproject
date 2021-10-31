@@ -1,110 +1,118 @@
-
 /* main */
-main{
+main {
     height: fit-content;
     display: grid;
     grid-template-columns: auto 25%;
     grid-template-areas:
-    "about about" 
-    "table images"
-   "tablecopy images";
+        "about about"
+        "table images"
+        "tablecopy images";
 }
+
 /* about */
-.about{
-    grid-area:about;
+.about {
+    grid-area: about;
 }
 
 /* aside */
-aside{
-    margin-top:2% ;
+aside {
+    margin-top: 2%;
 
     grid-area: images;
     display: flex;
     width: 100%;
-    
+
     flex-direction: column;
 }
-aside a{
+
+aside a {
     height: 170px;
     background-size: cover;
     width: 100%;
     display: inline-block;
 }
 
-aside :nth-child(1){
-    background-image:url("../../recources/img/bestdestinations/crete-jpg_header-38813.webp");
+aside :nth-child(1) {
+    background-image: url("../../recources/img/bestdestinations/crete-jpg_header-38813.webp");
 }
-aside :nth-child(2){
-    background-image:url("../../recources/img/bestdestinations/las-palmas-de-gran-canaria-spain-jpg_header-31996.webp");
+
+aside :nth-child(2) {
+    background-image: url("../../recources/img/bestdestinations/las-palmas-de-gran-canaria-spain-jpg_header-31996.webp");
 }
-aside :nth-child(3){
-    background-image:url("../../recources/img/bestdestinations/tenerife-spain-jpg_header-35043.webp");
+
+aside :nth-child(3) {
+    background-image: url("../../recources/img/bestdestinations/tenerife-spain-jpg_header-35043.webp");
 
 }
 
 /* table */
-table{
+table {
     width: 100vw;
     grid-area: table;
 }
-table td{
-    border-width:3px;
+
+table td {
+    border-width: 3px;
     border-color: #957DAD;
-    border-style:double;
-    background-color:#D291BC;
+    border-style: double;
+    background-color: #D291BC;
 
 }
 
-table tr{
-height: 50px;
+table tr {
+    height: 50px;
 }
 
 
 
-.orderButton{
+.orderButton {
 
-    background-color:#957DAD;
+    background-color: #957DAD;
 }
-.orderButton:hover{
+
+.orderButton:hover {
     cursor: pointer;
 
 }
+
 /* coppyright */
-.copyrightTable{
+.copyrightTable {
     height: fit-content;
     grid-area: tablecopy;
 }
-@media  screen and (max-width: 1179px ) {
-    aside :nth-child(1){
+
+@media screen and (max-width: 1179px) {
+    aside :nth-child(1) {
         display: none;
     }
 
 
-    main{
-   
+    main {
+
         grid-template-areas:
-        "about about" 
-        "table table"
-       "tablecopy tablecopy"
-       "images images";
+            "about about"
+            "table table"
+            "tablecopy tablecopy"
+            "images images";
     }
-    aside{
+
+    aside {
         flex-direction: row;
 
     }
 }
 
-@media  screen and (max-width: 480px ) {
-    .about{
+@media screen and (max-width: 480px) {
+    .about {
         display: none;
     }
-  
-    main{
-   
+
+    main {
+
 
         grid-template-areas:
-        "table"
-       "tablecopy"
-       "images";
+            "table"
+            "tablecopy"
+            "images";
     }
 }

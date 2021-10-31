@@ -1,37 +1,40 @@
-main{
+main {
     width: 100%;
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
-.video{
+.video {
     object-fit: fill;
     /* height: 60%; */
     width: 100%;
 }
 
 
-.travels{
+.travels {
     width: 75%;
     display: flex;
     flex-direction: column;
 }
+
 .travels article {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
 }
-.travels .text{
+
+.travels .text {
     line-height: 1.3;
     text-indent: 2em;
     /* width: 40%; */
 }
 
-.travels  .image{
+.travels .image {
     display: flex;
     width: 30%;
     flex-direction: column;
 }
-.side{
+
+.side {
     background-color: #D291BC;
     height: 52%;
     display: inline-block;
@@ -42,46 +45,51 @@ main{
 
 /* tablet */
 /* header */
-@media  screen  and (max-width: 1179px ) {
-    main{
-        flex-direction:column;
+@media screen and (max-width: 1179px) {
+    main {
+        flex-direction: column;
     }
-  
-    .side{
+
+    .side {
         padding: 0%;
         margin: 0%;
         height: 100%;
         width: 100%;
-        position:initial;
+        position: initial;
         order: -1;
 
     }
-    .side ol{
+
+    .side ol {
         margin: 0%;
         padding: 0%;
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-    .side li{
+
+    .side li {
         margin: 0 6% 0% 7%;
         width: auto;
 
     }
 
-    .travels{
+    .travels {
         flex-direction: column-reverse;
         width: 100%;
     }
-    .travels h2{
+
+    .travels h2 {
         order: 1;
     }
+
     .travels article {
         text-align: left;
         display: flex;
         flex-direction: row;
     }
-    .travels .image{
+
+    .travels .image {
         order: -1;
     }
 }
@@ -90,43 +98,46 @@ main{
 /* header */
 
 @media screen and (max-width: 480px) {
-  
-    main{
-        flex-direction:column-reverse;
+
+    main {
+        flex-direction: column-reverse;
     }
 
-    .side{
+    .side {
         padding: 0%;
         margin: 0%;
         height: auto;
         width: 100%;
-        position:static;
+        position: static;
     }
-    .side ol{
+
+    .side ol {
         margin: 0%;
         padding: 0%;
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-    .side li{
+
+    .side li {
 
         width: auto;
 
     }
 
-    .video{
+    .video {
         display: none;
-    }   
+    }
 
-    .travels{
+    .travels {
         flex-direction: column-reverse;
         width: 100%;
     }
+
     .travels article {
         text-align: left;
         display: flex;
         flex-direction: column-reverse;
     }
-   
+
 }

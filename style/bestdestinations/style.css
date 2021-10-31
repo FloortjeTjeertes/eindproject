@@ -1,40 +1,47 @@
-
 main article {
-    margin:1%;
+    margin: 1%;
     padding: 1%;
     background-color: #D291BC;
 }
-main :nth-child(1){
+
+main :nth-child(1) {
     grid-area: Curaçao;
 
 }
-main  :nth-child(2){
+
+main :nth-child(2) {
     grid-area: Griekenland;
 
 }
-main  :nth-child(3){
+
+main :nth-child(3) {
     grid-area: Spanje;
 
 }
-main  :nth-child(4){
+
+main :nth-child(4) {
     grid-area: Aruba;
 
 }
-main  :nth-child(5){
+
+main :nth-child(5) {
     grid-area: Nederland;
 
 }
-main  :nth-child(6){
+
+main :nth-child(6) {
     grid-area: beach;
 
 }
-aside{
+
+aside {
 
     grid-area: images;
     display: flex;
     width: 100%;
 }
-aside a{
+
+aside a {
     background-size: cover;
     /* background: no-repeat; */
     width: 100%;
@@ -42,41 +49,46 @@ aside a{
     display: inline-block;
 
 }
-aside :nth-child(1){
-    background-image:url("../../recources/img/bestdestinations/crete-jpg_header-38813.webp");
+
+aside :nth-child(1) {
+    background-image: url("../../recources/img/bestdestinations/crete-jpg_header-38813.webp");
 }
-aside :nth-child(2){
-    background-image:url("../../recources/img/bestdestinations/las-palmas-de-gran-canaria-spain-jpg_header-31996.webp");
+
+aside :nth-child(2) {
+    background-image: url("../../recources/img/bestdestinations/las-palmas-de-gran-canaria-spain-jpg_header-31996.webp");
 }
-aside :nth-child(3){
-    background-image:url("../../recources/img/bestdestinations/tenerife-spain-jpg_header-35043.webp");
+
+aside :nth-child(3) {
+    background-image: url("../../recources/img/bestdestinations/tenerife-spain-jpg_header-35043.webp");
 
 }
 
-main{
+main {
     column-gap: 1%;
-    
+
     display: grid;
-grid-template-columns: auto auto auto;
-/* grid-template-rows: auto; */
-grid-template-areas: 
-"Griekenland Curaçao Spanje"
-"Nederland  Curaçao Aruba"
-"Nederland beach beach"
-"images images images";
+    grid-template-columns: auto auto auto;
+    /* grid-template-rows: auto; */
+    grid-template-areas:
+        "Griekenland Curaçao Spanje"
+        "Nederland  Curaçao Aruba"
+        "Nederland beach beach"
+        "images images images";
 }
-@media screen and (max-width: 1179px ) {
-   
-    aside :nth-child(3){
+
+@media screen and (max-width: 1179px) {
+
+    aside :nth-child(3) {
         display: none;
     }
 
-    main :nth-child(4){
+    main :nth-child(4) {
         display: none;
-        background-color:cornflowerblue;
+        background-color: cornflowerblue;
     }
-    main{
-        grid-template-areas: 
+
+    main {
+        grid-template-areas:
             "Curaçao Griekenland"
             "Curaçao Griekenland"
             "Spanje  Griekenland"
@@ -86,34 +98,37 @@ grid-template-areas:
             "beach beach"
             "images images";
     }
-  
+
 
 
 }
+
 @media screen and (max-width: 480px) {
-    main :nth-child(4){
+    main :nth-child(4) {
         display: none;
-        background-color:cornflowerblue;
+        background-color: cornflowerblue;
     }
-    
-    main{
-        grid-template-areas: 
+
+    main {
+        grid-template-areas:
             "Nederland"
             "Spanje"
             "Griekenland"
             "Curaçao"
             "beach"
             "images"
-            ;
+        ;
     }
-aside{
-        display:grid;
-        grid-template-areas:"Curaçao"
-                 "Griekenland"
-                 "Spanje" ;
+
+    aside {
+        display: grid;
+        grid-template-areas: "Curaçao"
+            "Griekenland"
+            "Spanje";
     }
-    aside a{
-        padding-top:10% ;
+
+    aside a {
+        padding-top: 10%;
         height: 150px;
         display: block;
     }
